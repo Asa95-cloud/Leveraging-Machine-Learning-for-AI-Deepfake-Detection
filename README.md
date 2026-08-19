@@ -1,9 +1,10 @@
 # Deepfake detection pipeline
 
-Runnable implementation of the eight-stage pipeline described in
-Figure 1 and Section 3 of the accompanying dissertation, "Leveraging
-Machine Learning for AI-Deepfake Detection in Strengthening Digital
-Forensic Evidence Authentication."
+The pipeline describes this study "Leveraging Machine Learning for AI-Deepfake Detection in Strengthening Digital Forensic Evidence Authentication".
+<img src="https://github.com/user-attachments/assets/d460e7fd-f775-432a-8753-f63871136588"
+     alt="image2"
+     style="max-width: 100%; height: auto;">
+
 
 ## Stage -> file -> research basis
 
