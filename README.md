@@ -35,7 +35,7 @@ now downloaded on this machine** -- `train.py` defaults to
 `--collections actors,youtube` accordingly:
 
 ```
-/Users/ronaldkato/Downloads/Annet Research/FaceForensics++_data/
+/Users/annetnabukenya/Downloads/Annet Research/FaceForensics++_data/
 ├── original_sequences/youtube/c23/videos                (1000 real clips)
 ├── original_sequences/actors/c23/videos                 (363 real clips)
 ├── manipulated_sequences/Deepfakes/c23/videos            (1000 fake clips)
@@ -199,7 +199,7 @@ Useful flags (all optional, defaults shown):
 
 ```bash
 python train.py \
-  --root-dir "/Users/ronaldkato/Downloads/Annet Research/FaceForensics++_data" \
+  --root-dir "/Users/annetnabukenya/Downloads/Annet Research/FaceForensics++_data" \
   --collections actors,youtube --max-videos 80 \
   --output-dir results \
   --epochs 8 --batch-size 8 --lr 1e-4 --patience 2 \
@@ -220,17 +220,6 @@ force a rebuild -- needed if you change `--max-frames-per-video` or
 switch which videos are in scope.
 
 ### Output -> report section mapping
-
-| File in `results/` | Report section |
-|---|---|
-| `experiment_summary.md` | Ready-to-paste text for 4.2, 4.3, 4.5, 5.3 |
-| `metrics.json` | Full machine-readable results (for Table 6, appendices, etc.) |
-| `figure4_confusion_matrix.png` | 4.4, Figure 4 |
-| `figure5_roc_curve.png` | 4.4, Figure 5 |
-| `figure6_generalisation_gap.png` | 4.5, Figure 6 (only written once >=2 methods are in scope) |
-| `figure7_gradcam_*.png` | 4.6, Figure 7 |
-| `figure8_forensic_report_sample.pdf` | 4.7, Figure 8 |
-| `best_model.pt` | early-stopped model weights |
 
 `train.py` never lets one bad video abort the run: unreadable files,
 videos with zero detectable faces, and optional-figure failures
